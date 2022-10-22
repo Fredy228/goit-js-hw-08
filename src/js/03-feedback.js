@@ -22,8 +22,7 @@ function setValueStorage(event) {
 function submitForm(event) {
     event.preventDefault();
 
-    console.log(`email: ${formStorage.email},
-    message: ${formStorage.message}`);
+    console.log(formStorage);
 
     event.currentTarget.reset();
     localStorage.removeItem(STORAGE_KEY);
